@@ -53,8 +53,8 @@ def main(image, directory):
     
     frame = FrameData(DictData)
     print(frame.head())
-    fileName = image.split('.')[0] + '.csv'
-    frame.to_csv(fileName, index = False)
+    fileName = image.split('.')[0] + '.xlsx'
+    frame.to_excel(fileName)
     return
 
 

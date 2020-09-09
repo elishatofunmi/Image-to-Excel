@@ -157,15 +157,15 @@ def main(directory , image):
     
     frame = FrameData(Categories)
     print(frame.head())
-    frame_name = image.split('.')[0] +'.csv'
-    frame.to_csv(frame_name, index = False)
+    frame_name = image.split('.')[0] +'.xlsx'
+    frame.to_excel(frame_name)
     return 
 
 
 
 if __name__ == '__main__':
     directory = '/home/odemakinde/Desktop/Image to Excel/Image-to-Excel/test images/'
-    image = 'menu2.jpg' #save image as 'imagename' + '.csv'
+    image = 'menu2.jpg' #save image as 'imagename' + '.xlsx'
     main(directory, image)
 
 
